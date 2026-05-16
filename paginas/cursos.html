@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="../css/cursos.css">
+
+</head>
+
+<body>
+
+
+     <nav class="navbar">
+
+        <div>
+
+            <h1>Panel De Cursos</h1>
+            <p>Gestion de Cursos</p>
+
+        </div>
+
+        <button class="btn-navbar">
+            Regresar
+        </button>
+
+    </nav>
+    <div class="card-body">
+
+        <h1>Gestión de Cursos</h1>
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario">
+
+            <!-- NOMBRE CURSO -->
+
+            <div class="input-group">
+
+                <label>Nombre Curso</label>
+
+                <input
+                    type="text"
+                    id="nombreCurso"
+                    placeholder="Ingrese curso"
+                >
+
+            </div>
+
+            <!-- ESPECIALIDAD -->
+
+            <div class="input-group">
+
+                <label>Especialidad</label>
+
+                <select
+                    id="especialidadCurso"
+                    onchange="actualizarCursos()"
+                >
+
+                    <option value="">
+                        Seleccione especialidad
+                    </option>
+
+                    <option value="Matemática">
+                        Matemática
+                    </option>
+
+                    <option value="Comunicación">
+                        Comunicación
+                    </option>
+
+                    <option value="Ciencia">
+                        Ciencia
+                    </option>
+
+                    <option value="Programación">
+                        Programación
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- DOCENTE -->
+
+            <div class="input-group">
+
+                <label>Docente</label>
+
+                <select id="docenteCurso">
+
+                    <option value="">
+                        Seleccione docente
+                    </option>
+
+                    <option>
+                        Juan Pérez
+                    </option>
+
+                    <option>
+                        Ana Torres
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- CURSO -->
+
+            <div class="input-group">
+
+                <label>Curso Asignado</label>
+
+                <select id="cursoAsignado">
+
+                    <option value="">
+                        Seleccione curso
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- SECCION -->
+
+            <div class="input-group">
+
+                <label>Sección</label>
+
+                <select id="seccionCurso">
+
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+
+                </select>
+
+            </div>
+
+            <!-- BOTON -->
+            <button
+                type="button"
+                class="btn-guardar"
+                onclick="guardarCurso()">
+                Guardar Curso
+            </button>
+
+        </form>
+
+        <!-- TABLA -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Curso</th>
+                    <th>Especialidad</th>
+                    <th>Docente</th>
+                    <th>Sección</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaCursos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../js/cursos.js"></script>
+
+</body>
+</html>

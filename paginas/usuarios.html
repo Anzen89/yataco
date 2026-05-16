@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Usuario</title>
+
+    <link rel="stylesheet" href="../css/usuarios.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div>
+
+            <h1>Panel De Usuario</h1>
+            <p>Gestion de Usuarios</p>
+
+        </div>
+
+        <button class="btn-navbar">
+            Regresar
+        </button>
+
+    </nav>
+
+    <div class="card-body">
+
+        <h1>Registrar Usuario</h1>
+
+        <form class="formulario">
+
+            <div class="input-group">
+
+                <label>Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombreUsuario"
+                    placeholder="Ingrese nombre"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label>DNI</label>
+
+                <input
+                type="text"
+                id="dniUsuario"
+                placeholder="Ingrese DNI"
+                maxlength="8"
+            >
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Correo</label>
+
+                <input
+                    type="email"
+                    id="correoUsuario"
+                    placeholder="Ingrese correo"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Rol</label>
+
+                    <select id="rolUsuario">
+
+                    <option value="">Seleccione rol</option>
+
+                    <option value="Admin">
+                    Admin
+                    </option>
+
+                    <option value="Docente">
+                    Docente
+                    </option>
+
+                    </select>
+
+            </div>
+
+            <div class="input-group">
+
+            <label>Contraseña</label>
+
+            <input
+                type="password"
+                id="passwordUsuario"
+                placeholder="Ingrese contraseña"
+            >
+
+            </div>
+
+            <button
+                type="button"
+                class="btn-guardar"
+                onclick="guardarUsuario()"
+            >
+                Guardar Usuario
+            </button>
+
+        </form>
+
+        <!--Tabla-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>DNI</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaUsuarios">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="../js/usuarios.js"></script>
+
+</body>
+</html>

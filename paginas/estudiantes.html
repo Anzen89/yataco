@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Estudiantes</title>
+
+    <link
+    rel="stylesheet"
+    href="../css/estudiantes.css">
+
+</head>
+
+<body>
+
+     <nav class="navbar">
+
+        <div>
+
+            <h1>Panel De Estudiantes</h1>
+            <p>Gestion de Estudiantes</p>
+
+        </div>
+
+        <button class="btn-navbar">
+            Regresar
+        </button>
+
+    </nav>
+
+    <div class="card-body">
+
+        <h1>Registro de Estudiantes</h1>
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario">
+
+            <!-- CODIGO -->
+
+            <div class="input-group">
+
+                <label>Código Estudiante</label>
+
+                <input
+                    type="text"
+                    id="codigoEstudiante"
+                    placeholder="Ingrese código"
+                >
+
+            </div>
+
+            <!-- NOMBRE -->
+
+            <div class="input-group">
+
+                <label>Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombreEstudiante"
+                    placeholder="Ingrese nombre"
+                >
+
+            </div>
+
+            <!-- APELLIDOS -->
+
+            <div class="input-group">
+
+                <label>Apellidos</label>
+
+                <input
+                    type="text"
+                    id="apellidoEstudiante"
+                    placeholder="Ingrese apellidos"
+                >
+
+            </div>
+
+            <!-- DNI -->
+
+            <div class="input-group">
+
+                <label>DNI</label>
+
+                <input
+                    type="text"
+                    id="dniEstudiante"
+                    placeholder="Ingrese DNI"
+                    maxlength="8"
+                >
+
+            </div>
+
+            <!-- FECHA -->
+
+            <div class="input-group">
+
+                <label>Fecha Nacimiento</label>
+
+                <input
+                    type="date"
+                    id="fechaNacimiento"
+                >
+
+            </div>
+
+            <!-- GRADO -->
+
+            <div class="input-group">
+
+                <label>Grado</label>
+
+                <select id="gradoEstudiante">
+
+                    <option value="">
+                        Seleccione grado
+                    </option>
+
+                    <option>1° Primaria</option>
+                    <option>2° Primaria</option>
+                    <option>3° Primaria</option>
+                    <option>4° Primaria</option>
+                    <option>5° Primaria</option>
+                    <option>6° Primaria</option>
+
+                </select>
+
+            </div>
+
+            <!-- SECCION -->
+
+            <div class="input-group">
+
+                <label>Sección</label>
+
+                <select id="seccionEstudiante">
+
+                    <option value="">
+                        Seleccione sección
+                    </option>
+
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+
+                </select>
+
+            </div>
+
+            <!-- BOTON -->
+
+            <button
+                type="button"
+                class="btn-guardar"
+                onclick="guardarEstudiante()"
+            >
+                Guardar Estudiante
+            </button>
+
+        </form>
+
+        <!-- TABLA -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Fecha</th>
+                    <th>Grado</th>
+                    <th>Sección</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaEstudiantes">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../js/estudiantes.js"></script>
+
+</body>
+</html>

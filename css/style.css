@@ -1,0 +1,438 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    font-family:'Poppins', sans-serif;
+    background:#f8fafc;
+}
+/* HEADER */
+
+.dashboard-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.dashboard-header h1{
+    font-size:32px;
+    color:#0f172a;
+    margin-bottom:5px;
+}
+
+.dashboard-header p{
+    color:#64748b;
+}
+
+/* BOTON */
+
+.btn-dashboard{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 18px;
+    border-radius:14px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+/* GRID DASHBOARD */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+
+    gap:20px;
+}
+
+/* CARD DASHBOARD */
+
+.card-dashboard{
+
+    border-radius:22px;
+
+    padding:22px;
+
+    min-height:180px;
+
+    box-shadow:
+    0px 4px 15px rgba(0,0,0,0.05);
+
+    transition:0.3s;
+}
+
+.card-dashboard:hover{
+    transform:translateY(-5px);
+}
+
+/* ICONOS */
+
+.card-icon{
+
+    font-size:36px;
+
+    margin-bottom:12px;
+
+    display:block;
+}
+
+/* TEXTOS */
+
+.card-info h5{
+    color:#64748b;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.card-info{
+    width:100%;
+}
+
+.card-info h2{
+    font-size:34px;
+    margin:8px 0px;
+}
+
+.card-info p{
+    color:#94a3b8;
+}
+
+/* COLORES SUAVES */
+
+.students-card{
+    background:#dbeafe;
+}
+
+.teachers-card{
+    background:#ede9fe;
+}
+
+.courses-card{
+    background:#ffedd5;
+}
+
+.sections-card{
+    background:#dcfce7;
+}
+
+.parents-card{
+    background:#fee2e2;
+}
+
+.apoderados-card{
+    background: #b0dee3;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+    width:260px;
+    background:#111827;
+    color:white;
+    padding:25px 18px;
+    display:flex;
+    flex-direction:column;
+    border-radius:0px 25px 25px 0px;
+    min-height:100vh;
+    box-shadow:
+    4px 0px 20px rgba(0,0,0,0.08);
+}
+.logo{
+    margin-bottom:50px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.menu li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 18px;
+    margin-bottom:12px;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s;
+    color:#d1d5db;
+}
+
+.menu li:hover{
+
+    background:#1f2937;
+    transform:translateX(5px);
+}
+
+.menu .active{
+
+    background:#2563eb;
+    color:white;
+}
+/* MAIN */
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:white;
+    border-radius:20px;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    box-shadow:
+    0px 4px 15px rgba(0,0,0,0.04);
+    backdrop-filter:blur(10px);
+}
+
+.navbar h1{
+    font-size:35px;
+    color:#0f172a;
+}
+
+.navbar p{
+    color:#64748b;
+}
+
+.btn-navbar{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-navbar:hover{
+
+    background:#1d4ed8;
+}
+
+/* TARJETAS */
+
+.cards-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    padding:20px;
+    box-shadow:
+    0px 4px 15px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+}
+
+/* TOP CARD */
+
+.card-top{
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* COLORES SUAVES */
+
+.blue{
+    background:#dbeafe;
+}
+
+.green{
+    background:#dcfce7;
+}
+
+.purple{
+    background:#ede9fe;
+}
+
+.orange{
+    background:#ffedd5;
+}
+
+.cyan{
+    background:#cffafe;
+}
+
+.red{
+    background:#fee2e2;
+}
+
+.icon{
+    font-size:55px;
+}
+
+.card-top h3{
+    color:#0f172a;
+    font-size:26px;
+    margin:15px 0px 8px;
+}
+
+.card-top p{
+    color:#475569;
+    font-size:15px;
+}
+.toggle-btn-usuarios{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.toggle-btn-estudiantes{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.toggle-btn-docentes{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.toggle-btn-cursos{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.toggle-btn{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+
+/* BODY */
+
+.card-body{
+    display:none;
+    padding:25px;
+}
+
+.card.active .card-body{
+    display:block;
+}
+
+/* FORM */
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px;
+    border:1px solid #cbd5e1;
+    border-radius:12px;
+    outline:none;
+}
+
+.btn-guardar{
+    width:100%;
+    border:none;
+    padding:15px;
+    background:#0f172a;
+    color:white;
+    border-radius:12px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+/* TABLA */
+
+table{
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:12px;
+    border-bottom:1px solid #e2e8f0;
+    text-align:left;
+}
+
+th{
+    background:#f8fafc;
+}
+
+/* INFO */
+
+.info-card{
+    color:#475569;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+    }
+
+}

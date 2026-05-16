@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Educativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo"> 
+
+            <h2>Sistema de Gestión Escolar</h2>
+            <p>IE 22237 "José Yataco Pachas"</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">Dashboard</li>
+            <li>Usuarios</li>
+            <li>Estudiantes</li>
+            <li>Docentes</li>
+            <li>Cursos</li>
+            <li>Roles</li>
+            <li>Apoderados</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+
+    <main class="main-content">
+
+        <!-- CONTENIDO -->
+
+<div class="col-md-10 p-4">
+
+    <!-- TITULO -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                Panel Administrativo
+            </h1>
+
+            <p>
+                Gestión Académica Institucional
+            </p>
+
+        </div>
+
+        <button class="btn-dashboard">
+            Año Académico 2025
+        </button>
+
+    </div>
+
+    <!-- TARJETAS -->
+
+    <div class="dashboard-cards">
+
+    <!-- ESTUDIANTES -->
+
+    <div class="card-dashboard students-card">
+
+        <div class="card-info">
+
+            <span class="card-icon"></span>
+
+            <h5>Estudiantes</h5>
+
+            <h2>850</h2>
+
+            <p>Registrados</p>
+
+        </div>
+
+    </div>
+
+    <!-- DOCENTES -->
+
+    <div class="card-dashboard teachers-card">
+
+        <div class="card-info">
+
+            <span class="card-icon"></span>
+
+            <h5>Docentes</h5>
+
+            <h2>48</h2>
+
+            <p>Activos</p>
+
+        </div>
+
+    </div>
+
+    <!-- CURSOS -->
+
+    <div class="card-dashboard courses-card">
+
+        <div class="card-info">
+
+            <span class="card-icon"></span>
+
+            <h5>Cursos</h5>
+
+            <h2>25</h2>
+
+            <p>Disponibles</p>
+
+        </div>
+
+    </div>
+
+    <!-- SECCIONES -->
+
+    <div class="card-dashboard sections-card">
+
+        <div class="card-info">
+
+            <span class="card-icon"></span>
+
+            <h5>Secciones</h5>
+
+            <h2>18</h2>
+
+            <p>Académicas</p>
+
+        </div>
+
+    </div>
+
+    <!-- APODERADOS -->
+
+     <div class="card-dashboard apoderados-card">
+
+        <div class="card-info">
+
+            <span class="card-icon"></span>
+
+            <h5>Apoderados</h5>
+
+            <h2>720</h2>
+
+            <p>Responsables registrados </p>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <br> <hr> <br>
+
+    </div>
+
+        <!-- TARJETAS -->
+
+        <section class="cards-container">
+
+            <!-- USUARIOS -->
+
+            <div class="card blue">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">👤</span>
+
+                        <h3>Usuarios</h3>
+
+                        <p>
+                            Gestión de cuentas y accesos
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn-usuarios">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <form class="formulario">
+
+                        <div class="input-group">
+
+                            <label>Nombre</label>
+
+                            <input
+                                type="text"
+                                id="nombreUsuario"
+                                placeholder="Ingrese nombre"
+                            >
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Correo</label>
+
+                            <input
+                                type="email"
+                                id="correoUsuario"
+                                placeholder="Ingrese correo"
+                            >
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Rol</label>
+
+                            <input
+                                type="text"
+                                id="rolUsuario"
+                                placeholder="Ingrese rol"
+                            >
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn-guardar"
+                            onclick="guardarUsuario()"
+                        >
+                            Guardar Usuario
+                        </button>
+
+                    </form>
+
+                    <!-- TABLA -->
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="tablaUsuarios">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- ESTUDIANTES -->
+
+            <div class="card green">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">🎓</span>
+
+                        <h3>Estudiantes</h3>
+
+                        <p>
+                            Administración académica
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn-estudiantes">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p class="info-card">
+                        Aquí podrás registrar y administrar estudiantes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- DOCENTES -->
+
+            <div class="card purple">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">📚</span>
+
+                        <h3>Docentes</h3>
+
+                        <p>
+                            Gestión de profesores
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn-docentes">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p class="info-card">
+                        Aquí podrás registrar y asignar cursos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CURSOS -->
+
+            <div class="card orange">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">📝</span>
+
+                        <h3>Cursos</h3>
+
+                        <p>
+                            Gestión de cursos
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn-cursos">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p class="info-card">
+                        Administración de cursos académicos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ROLES -->
+
+            <div class="card cyan">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">🔐</span>
+
+                        <h3>Roles</h3>
+
+                        <p>
+                            Gestión de permisos
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p class="info-card">
+                        Configuración de accesos del sistema.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- APODERADOS -->
+
+            <div class="card red">
+
+                <div class="card-top">
+
+                    <div>
+
+                        <span class="icon">👨‍👩‍👧</span>
+
+                        <h3>Apoderados</h3>
+
+                        <p>
+                            Gestión de responsables
+                        </p>
+
+                    </div>
+
+                    <button class="toggle-btn">
+                        +
+                    </button>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p class="info-card">
+                        Administración de apoderados estudiantiles.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

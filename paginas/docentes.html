@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Docentes</title>
+
+    <link
+    rel="stylesheet"
+    href="../css/docentes.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div>
+
+            <h1>Panel De Docentes</h1>
+            <p>Gestion de Docentes</p>
+
+        </div>
+
+        <button class="btn-navbar">
+            Regresar
+        </button>
+
+    </nav>
+    <div class="card-body">
+
+        <h1>Registro de Docentes</h1>
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario">
+
+            <!-- NOMBRE -->
+
+            <div class="input-group">
+
+                <label>Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombreDocente"
+                    placeholder="Ingrese nombre"
+                >
+
+            </div>
+
+            <!-- APELLIDO -->
+
+            <div class="input-group">
+
+                <label>Apellido</label>
+
+                <input
+                    type="text"
+                    id="apellidoDocente"
+                    placeholder="Ingrese apellido"
+                >
+
+            </div>
+
+            <!-- DNI -->
+
+            <div class="input-group">
+
+                <label>DNI</label>
+
+                <input
+                    type="text"
+                    id="dniDocente"
+                    placeholder="Ingrese DNI"
+                    maxlength="8"
+                >
+
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="emailDocente"
+                    placeholder="Ingrese email"
+                >
+
+            </div>
+
+            <!-- ESPECIALIDAD -->
+
+            <div class="input-group">
+
+                <label>Especialidad</label>
+
+                <select id="especialidadDocente">
+
+                    <option value="">
+                        Seleccione especialidad
+                    </option>
+
+                    <option>Matemática</option>
+                    <option>Comunicación</option>
+                    <option>Ciencia</option>
+                    <option>Historia</option>
+                    <option>Inglés</option>
+
+                </select>
+
+            </div>
+
+            <!-- CURSO -->
+
+            <div class="input-group">
+
+                <label>Curso Asignado</label>
+
+                <select id="cursoDocente">
+
+                    <option value="">
+                        Seleccione curso
+                    </option>
+
+                    <option>Álgebra</option>
+                    <option>Geometría</option>
+                    <option>Literatura</option>
+                    <option>Biología</option>
+                    <option>Programación</option>
+
+                </select>
+
+            </div>
+
+            <!-- BOTON -->
+
+            <button
+                type="button"
+                class="btn-guardar"
+                onclick="guardarDocente()"
+            >
+                Guardar Docente
+            </button>
+
+        </form>
+
+        <!-- TABLA -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <th>Email</th>
+                    <th>Especialidad</th>
+                    <th>Curso</th>
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaDocentes">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../js/docentes.js"></script>
+
+</body>
+</html>
