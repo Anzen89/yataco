@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Institucional</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <main class="container">
+
+    <section class="login-card">
+
+      <div class="top">
+
+        <div class="logo">
+          J.Y
+        </div>
+
+        <h1>I.E José Yataco Pachas</h1>
+
+        <p>
+          Acceso al sistema institucional
+        </p>
+
+      </div>
+
+      <form id="loginForm">
+
+        <div class="input-group">
+
+          <label>Correo institucional</label>
+
+          <input 
+            type="email"
+            id="email"
+            placeholder="usuario@institucion.edu.pe"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Contraseña</label>
+
+          <div class="password-box">
+
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              required
+            >
+
+            <button type="button" id="togglePassword">
+              👁
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="options">
+
+          <label class="remember">
+            <input type="checkbox">
+            Recordarme
+          </label>
+
+          <a href="#">
+            ¿Olvidaste tu contraseña?
+          </a>
+
+        </div>
+
+        <button class="login-btn" type="submit">
+          Ingresar al sistema
+        </button>
+
+        <div class="divider">
+          <span>Acceso seguro</span>
+        </div>
+
+        <p class="footer-text">
+          Plataforma protegida y validada para usuarios autorizados.
+        </p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="../js/login.js"></script>
+
+</body>
+</html>

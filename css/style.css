@@ -9,7 +9,9 @@
 body{
     display:flex;
     font-family:'Poppins', sans-serif;
-    background:#f8fafc;
+    /*background-image:url(../img/img1.webp);*/
+    background: rgb(187, 187, 194);
+    
 }
 /* HEADER */
 
@@ -42,6 +44,37 @@ body{
     font-weight:500;
     cursor:pointer;
 }
+
+.btn-dashboard-ingresar{
+    border:none;
+    background:#be2ba3;
+    color:white;
+    padding:12px 18px;
+    border-radius:14px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.btn-dashboard-cerrar{
+    border:none;
+    background:#7dc31b;
+    color:white;
+    padding:12px 18px;
+    border-radius:14px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.btn-dashboard-crear{
+    border:none;
+    background:#29d0bf;
+    color:white;
+    padding:12px 18px;
+    border-radius:14px;
+    font-weight:500;
+    cursor:pointer;
+}
+
 
 /* GRID DASHBOARD */
 
