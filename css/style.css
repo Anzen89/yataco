@@ -10,9 +10,16 @@ body{
     display:flex;
     font-family:'Poppins', sans-serif;
     /*background-image:url(../img/img1.webp);*/
-    background: rgb(187, 187, 194);
+    background: rgb(206, 206, 221);
     
 }
+
+.panel {
+    display: block;
+    background-color: #1f2937;
+
+}
+
 /* HEADER */
 
 .dashboard-header{
@@ -21,6 +28,8 @@ body{
     justify-content:space-between;
     align-items:center;
     margin-bottom:20px;
+    background-color: #7b818a;
+    padding: 15px;
 }
 
 .dashboard-header h1{
@@ -385,6 +394,20 @@ body{
     cursor:pointer;
 }
 
+
+.usuario_registro {
+    display: flex;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #636d7b;
+    gap: 15px;
+    padding: 10px;
+}
+
+.usuario_registro img {
+    width: 30px;
+    border-radius: 50px;
+}
 
 
 /* BODY */
