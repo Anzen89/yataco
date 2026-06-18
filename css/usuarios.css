@@ -6,7 +6,7 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f1f5f9;
+    background: #f8fafc;
     margin:0;
     justify-content:center;
     align-items:center;
@@ -98,24 +98,17 @@ body{
 
 /* NAV*/
 .navbar{
-
     background:white;
-
     border-radius:20px;
-
     padding:18px 25px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     margin-bottom:30px;
-
     box-shadow:
     0px 4px 15px rgba(0,0,0,0.04);
 }
+
 .navbar h1{
     font-size:35px;
     color:#0f172a;

@@ -10,14 +10,8 @@ body{
     display:flex;
     font-family:'Poppins', sans-serif;
     /*background-image:url(../img/img1.webp);*/
-    background: rgb(206, 206, 221);
+    background: #f8fafc;
     
-}
-
-.panel {
-    display: block;
-    background-color: #1f2937;
-
 }
 
 /* HEADER */
@@ -28,8 +22,9 @@ body{
     justify-content:space-between;
     align-items:center;
     margin-bottom:20px;
-    background-color: #7b818a;
+    background: white;
     padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
 }
 
 .dashboard-header h1{
@@ -153,26 +148,32 @@ body{
 
 .students-card{
     background:#dbeafe;
+    border-top: 5px solid #2563eb;
 }
 
 .teachers-card{
     background:#ede9fe;
+    border-top: 5px solid #8b5cf6;
 }
 
 .courses-card{
     background:#ffedd5;
+    border-top: 5px solid #f59e0b;
 }
 
 .sections-card{
     background:#dcfce7;
+    border-top: 5px solid #10b981;
 }
 
 .parents-card{
     background:#fee2e2;
+    border-top: 5px solid #06d440;
 }
 
 .apoderados-card{
     background: #b0dee3;
+    border-top: 5px solid #06b6d4;
 }
 
 /* SIDEBAR */
@@ -180,7 +181,7 @@ body{
 .sidebar{
 
     width:260px;
-    background:#111827;
+    background: #07142c;
     color:white;
     padding:25px 18px;
     display:flex;
